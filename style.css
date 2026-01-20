@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #1a1a1a;
+}
+
+header {
+    background: #0b1c2d;
+    color: white;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hero {
+    background: #0b1c2d;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #c9a24d;
+    color: #0b1c2d;
+    padding: 0.7rem 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.dark {
+    background: #f4f4f4;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 0.8rem;
+}
+
+form button {
+    background: #0b1c2d;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    width: 100%;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    background: #0b1c2d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #0b1c2d;
+    }
+
+    nav a {
+        margin: 1rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        color: white;
+        font-size: 1.5rem;
+        border: none;
+    }
+}
